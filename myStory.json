@@ -1,0 +1,82 @@
+{
+  "Title": "Campus Life on the West Side",
+  "Credits": "Created by Adam Smith (amsmith@ucsc.edu).",
+  "InitialLocation": "Kresge",
+  "Locations": {
+    "Kresge": {
+      "Body": "You step into the newly opened Owl Cafe at Kresge. Students chatter and sip coffee. You overhear a whisper about a secret item once shared across all campus food spots... now lost.",
+      "Choices": [
+        {
+          "Text": "Investigate the rumor and head south to Porter",
+          "Target": "Porter"
+        }
+      ]
+    },
+    "Porter": {
+      "Body": "You arrive at the Porter/Kresge dining hall. You walk up to the worker and ask about a secret item. The worker is confused when all of a sudden a man spoke. An old man comes out of the kitchen and tells you the secret lies in the piano. You go back upstairs to the piano. You notice a small questionmark insignia.",
+      "Choices": [
+        {
+          "Text": "Press the piano button",
+          "Target": "PianoMechanism"
+        },
+        {
+          "Text": "Return to Kresge",
+          "Target": "Kresge"
+        }
+      ],
+      "HasMechanism": true
+    },
+    "Rachel Carson": {
+      "Body": "The dining hall buzzes. You ask around and finally find the head chef with a flame tattoo on his forearm. He can tell by your eyes the answer you seek and says, 'If you want to know the secret, bring me a burger and fries from Oakes Cafe.'",
+      "Choices": [
+        { "Text": "Give item",
+        "Target": "ChefReveal",
+        "RequiresItem": "Burger and Fries"
+        },
+        {
+          "Text": "Accept the quest and head south to Oakes",
+          "Target": "Oakes"
+        },
+        {
+          "Text": "Return to Porter",
+          "Target": "Porter"
+        }
+      ]
+    },
+    "Oakes": {
+      "Body": "You arrive at Oakes Cafe. You place an order for a burger and fries. Your order has been called.",
+      "Choices": [
+        {
+          "Text": "Take the food to the head chef at Rachel Carson",
+          "Target": "Rachel Carson",
+          "TakesItem": "Burger and Fries"
+        },
+        {
+          "Text": "Return north without the food",
+          "Target": "Rachel Carson"
+        }
+      ],
+      "GivesItem": "Burger and Fries"
+    },
+    "ChefReveal": {
+      "Body": "You return to Rachel Carson and hand over the burger and fries. The head chef smiles and reveals a bottle. 'This is the Lost Sauce which was once used to elevate every legendary dish on campus. May it serve you well.'\n\nCongratulations! You have completed your quest and uncovered the Lost Sauce.",
+      "Choices": [],
+      "RequiresItem": "Burger and Fries"
+    },
+    "PianoMechanism": {
+      "Body": "You press the question mark insignia. A key pops open revealing a small note: 'What you seek is kept away and protected by he who is marked by flame.'",
+      "Choices": [
+        {
+          "Text": "Contemplate the clue and go south to Rachel Carson",
+          "Target": "Rachel Carson"
+        },
+        {
+          "Text": "Return to Porter",
+          "Target": "Porter"
+        }
+      ],
+      "IsMechanism": true
+    }
+    
+  }
+}
