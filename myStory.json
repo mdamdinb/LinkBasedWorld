@@ -59,7 +59,7 @@
       "GivesItem": "Burger and Fries"
     },
     "ChefReveal": {
-      "Body": "You return to Rachel Carson and hand over the burger and fries. The head chef smiles and reveals a bottle. 'This is the Lost Sauce which was once used to elevate every legendary dish on campus. May it serve you well.'\n\nCongratulations! You have completed your quest and uncovered the Lost Sauce.",
+      "Body": "You return to Rachel Carson and hand over the burger and fries. The head chef smiles and reveals a bottle. 'This is the Lost Sauce which was once used to elevate every legendary dish on campus. May it serve you well.'Congratulations! You have completed your quest and uncovered the Lost Sauce.",
       "Choices": [],
       "RequiresItem": "Burger and Fries"
     },
