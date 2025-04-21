@@ -66,7 +66,7 @@ class End extends Scene {
     }
 }
 
-// === PLAYER INVENTORY SETUP ===
+// inventory setup
 
 let playerInventory = [];
 
